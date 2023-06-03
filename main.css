@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgba(221, 221, 215, 0.37);
+}
+
+h2 {
+  font-style: italic;
+  color: rgb(5, 109, 201);
+  border-bottom: 2px solid rgb(5, 109, 201);
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+header {
+  padding: 16px;
+  background-color: rgb(5, 109, 201);
+  color: white;
+}
+
+header h1 {
+  font-style: italic;
+  cursor: pointer;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.artigo {
+  padding: 0 30px;
+}
+
+.artigo p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+section {
+  padding: 40px;
+}
+
+.section-produtos .container {
+  padding-right: 30px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 24.25%);
+  column-gap: 2%;
+  row-gap: 5%;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 60px;
+}
+
+.produto img {
+  max-width: 100%;
+}
+
+.principal {
+  width: 40%;
+}
+
+button {
+  background-color: rgb(5, 109, 201);
+  color: white;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* -------- Viewport Config -------- */
+@media screen and (max-width: 640px) {
+  .flex {
+    display: block;
+  }
+
+  .principal {
+    width: 100%;
+  }
+
+  .artigo {
+    padding: 20px 0;
+  }
+
+  .section-produtos {
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 98%);
+    column-gap: 2%;
+    row-gap: 2%;
+    padding-right: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .flex {
+    display: block;
+  }
+
+  .principal {
+    width: 100%;
+  }
+
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    column-gap: 3%;
+    row-gap: 5%;
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .artigo {
+    padding: 20px 0;
+  }
+
+  .section-produtos {
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
